@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+    <title>Chi tiết lá bài</title>
+</head>
+<body>
+
+<h1>Thông tin chi tiết lá bài</h1>
+
+<div id="card-details"></div>
+
+<script>
+     // Lấy thông tin từ localStorage
+     const role = localStorage.getItem('selectedCardRole');
+    const description = localStorage.getItem('selectedCardDescription');
+
+    // Hiển thị thông tin lá bài trên trang
+    var cardDetails = document.getElementById('card-details');
+    cardDetails.innerHTML = `
+        <p><strong>Vai trò:</strong> ${role}</p>
+        <p><strong>Mô tả:</strong> ${description}</p>
+    `;
+</script>
+
+</body>
+</html>

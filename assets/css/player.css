@@ -1,0 +1,71 @@
+:root{
+    --red: #ff0000;
+    --black: #000000;
+    --be: #f0d195;
+    --lightbrown: #aa8567;
+    --brown:#643d42;
+}
+body{
+    margin: 0;
+    background-color: var(--be);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: var(--brown);
+    display: flex;
+}
+.change-to-manager{
+    width: 40% !important;
+}
+
+.cards,.rules,.change-to-manager{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+span{
+    font-size: 30px;
+    color:var(--black)
+}
+
+.cards:hover,.rules:hover, .change-to-manager:hover{
+    background-color: var(--lightbrown);
+}
+
+
+h1 {
+    color: #333;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--lightbrown);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card:hover {
+    transform: scale(1.02); /* Hiệu ứng phóng to khi hover */
+}
